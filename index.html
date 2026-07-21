@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Velocity Enterprises | Premium Scientific Distribution</title>
 
     <!-- Google Fonts -->
@@ -175,6 +176,35 @@
             padding-bottom: 10px;
         }
 
+        /* CATALOG BUTTONS */
+        .catalog-buttons {
+            text-align: center;
+            margin-top: -30px;
+            margin-bottom: 60px;
+        }
+
+        .catalog-button {
+            display: inline-block;
+            margin: 10px 8px;
+            padding: 14px 30px;
+            background: var(--premium-gold);
+            color: var(--rich-black);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--premium-gold);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .catalog-button:hover {
+            background: transparent;
+            color: var(--premium-gold);
+            border-color: var(--premium-gold);
+            transform: translateY(-2px);
+        }
+
         /* PRODUCT GRID */
         .product-grid {
             display: grid;
@@ -343,6 +373,12 @@
             .contact-container {
                 padding: 30px;
             }
+
+            .catalog-button {
+                display: block;
+                margin: 12px auto;
+                max-width: 300px;
+            }
         }
     </style>
 </head>
@@ -376,17 +412,34 @@
 
     <!-- BRAND BAR -->
     <div class="brand-bar">
-    <span>Strategic Partners:</span>
-    <span class="brand-name">HPC MOLECULES</span>
-    <span style="margin:0 10px; color:#888;">|</span>
-    <span class="brand-name">BRAND</span>
-</div>
+        <span>Strategic Partners:</span>
+        <span class="brand-name">HPC MOLECULES</span>
+        <span style="margin:0 10px; color:#888;">|</span>
+        <span class="brand-name">BRAND</span>
+    </div>
 
     <!-- PRODUCTS -->
     <section id="products" class="section">
 
         <div class="section-title">
             <h2>Our Portfolio</h2>
+        </div>
+
+        <!-- PRODUCT CATALOG BUTTONS -->
+        <div class="catalog-buttons">
+
+            <a href="Velocity-Enterprises-Catalog.pdf"
+               target="_blank"
+               class="catalog-button">
+                📖 View Product Catalog
+            </a>
+
+            <a href="Velocity-Enterprises-Catalog.pdf"
+               download
+               class="catalog-button">
+                📥 Download Product Catalog
+            </a>
+
         </div>
 
         <div class="product-grid">
@@ -416,7 +469,7 @@
 
             <!-- CARD 3 -->
             <div class="product-card">
-                <h3>HPC Chemicals</h3>
+                <h3>HPC Molecules Chemicals</h3>
 
                 <ul>
                     <li>Authorized HPC Molecules Distributor</li>
@@ -547,6 +600,7 @@
                     </button>
 
                 </form>
+
             </div>
 
         </div>
